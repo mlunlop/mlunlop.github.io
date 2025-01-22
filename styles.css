@@ -52,6 +52,14 @@ header h1 {
     font-size: 2.5rem; /* Tamaño de fuente */
 }
 
+@keyframes marquee {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
 /* Parallax */
 .parallax-container {
     position: relative; /* Posicionamiento relativo */
@@ -61,12 +69,14 @@ header h1 {
     background-position: center; /* Centrado */
     background-repeat: no-repeat; /* Sin repetición */
     background-size: cover; /* Cubrir todo el contenedor */
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
 }
 
 .parallax-text {
     position: absolute; /* Posicionamiento absoluto */
-    top: 50%; /* Centrado vertical */
-    left: 50%; /* Centrado horizontal */
+    top: 30%; /* Centrado vertical */
     transform: translate(-50%, -50%); /* Ajuste para centrar */
     color: white; /* Color del texto */
     font-size: 5rem; /* Tamaño de fuente */
@@ -74,6 +84,23 @@ header h1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
     font-family: parallax;
     letter-spacing: 2px;
+    display: inline-block;
+    animation: marquee 7s linear infinite
+}
+
+.marquee-clone {
+    position: absolute; /* Posicionamiento absoluto */
+    margin-left: 100% ;
+    top: 30%; /* Centrado vertical */
+    transform: translate(100%); /* Ajuste para centrar */
+    color: white; /* Color del texto */
+    font-size: 5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: parallax;
+    letter-spacing: 2px;
+    animation: marquee 7s linear infinite;
+
 }
 
 
