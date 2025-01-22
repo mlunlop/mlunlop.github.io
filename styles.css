@@ -31,7 +31,7 @@ body {
 header {
     background-color: #333; /* Color de fondo del header */
     color: #fff; /* Color del texto en el header */
-    padding: 1rem 0; /* Espaciado interno */
+    padding: 0.3rem 0; /* Espaciado interno */
     text-align: center; /* Alineación del texto */
     position: fixed; /* Fijo en la parte superior */
     width: 100%; /* Ancho completo */
@@ -331,3 +331,5 @@ input[type="radio"] {
 input[type="radio"]:checked + .carousel-indicators .indicator {
     background-color: #333; /* Color del indicador activo */
 }
+
+
