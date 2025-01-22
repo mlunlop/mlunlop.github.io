@@ -1,7 +1,17 @@
 /* Tipografías y fuentes */
 @font-face {
     font-family: titulo;
-    src: url(AliceYotsubaInc-Ea7Zj.ttf);
+    src: url(Fuentes/Nombre\ y\ Titulos-\ AliceYotsubaInc-Ea7Zj.ttf);
+}
+
+@font-face {
+    font-family: parallax;
+    src: url(Fuentes/Parallax-\ big_noodle_titling_oblique.ttf);
+}
+
+@font-face {
+    font-family: titulos;
+    src: url(Fuentes/Titulos-\ big_noodle_titling.ttf);
 }
 
 /* Estilos generales del cuerpo */
@@ -14,6 +24,7 @@ body {
     padding-top: 80px; /* Espacio para el header fijo */
     align-items: center;
     font-size: large; /* Tamaño de fuente */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Encabezado */
@@ -58,10 +69,13 @@ header h1 {
     left: 50%; /* Centrado horizontal */
     transform: translate(-50%, -50%); /* Ajuste para centrar */
     color: white; /* Color del texto */
-    font-size: 3rem; /* Tamaño de fuente */
+    font-size: 5rem; /* Tamaño de fuente */
     font-weight: bold; /* Negrita */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+    font-family: parallax;
+    letter-spacing: 2px;
 }
+
 
 /* Proyectos */
 .top-content {
@@ -121,7 +135,9 @@ section {
 
 h2 {
     border-bottom: 2px solid #333; /* Línea inferior */
-    padding-bottom: 1rem; /* Espaciado inferior */
+    padding-bottom: 0.5rem; /* Espaciado inferior */
+    font-family: titulos;
+    font-size: 2.2rem; /* Tamaño de fuente */
 }
 
 /* Nueva sección */
