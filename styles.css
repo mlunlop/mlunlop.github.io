@@ -1,0 +1,317 @@
+/* Tipografías y fuentes */
+@font-face {
+    font-family: titulo;
+    src: url(AliceYotsubaInc-Ea7Zj.ttf);
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Color de fondo */
+    color: #333; /* Color del texto */
+    padding-top: 80px; /* Espacio para el header fijo */
+    align-items: center;
+    font-size: large; /* Tamaño de fuente */
+}
+
+/* Encabezado */
+header {
+    background-color: #333; /* Color de fondo del header */
+    color: #fff; /* Color del texto en el header */
+    padding: 1rem 0; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    position: fixed; /* Fijo en la parte superior */
+    width: 100%; /* Ancho completo */
+    top: 0; /* Posición en la parte superior */
+    z-index: 1000; /* Asegura que el header esté por encima de otros elementos */
+}
+
+.header-container {
+    display: flex; /* Flexbox para alinear elementos */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    align-items: center; /* Alineación vertical */
+    padding: 0.25rem 2rem; /* Espaciado interno */
+}
+
+header h1 {
+    font-family: titulo; /* Fuente personalizada */
+    margin: 0; /* Sin margen */
+    font-size: 2.5rem; /* Tamaño de fuente */
+}
+
+/* Parallax */
+.parallax-container {
+    position: relative; /* Posicionamiento relativo */
+    height: 30vh; /* Altura de la imagen */
+    background-image: url('Imagenes/portada.png'); /* Imagen de fondo */
+    background-attachment: fixed; /* Fijo al hacer scroll */
+    background-position: center; /* Centrado */
+    background-repeat: no-repeat; /* Sin repetición */
+    background-size: cover; /* Cubrir todo el contenedor */
+}
+
+.parallax-text {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 50%; /* Centrado vertical */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Ajuste para centrar */
+    color: white; /* Color del texto */
+    font-size: 3rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto */
+}
+
+/* Proyectos */
+.top-content {
+    background-color: #fff; /* Color de fondo */
+    padding: 1rem; /* Espaciado interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 15px; /* Bordes redondeados */
+    justify-content: space-between; /* Espaciado uniforme */
+    align-items: center; /* Alineación vertical */
+    width: 100%; /* Ancho completo */
+    margin: 0 auto; /* Centrado */
+}
+
+#proyect-info {
+    margin-top: 0.5rem; /* Margen superior */
+    padding: 1rem; /* Espaciado interno */
+    background-color: #dfdfdf; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 0.5rem; /* Margen inferior */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
+
+/* Contenido dividido: izquierda y derecha */
+#split-content {
+    display: flex; /* Coloca los divs en línea horizontal */
+    justify-content: space-between; /* Espaciado uniforme entre elementos */
+    padding: 3rem; /* Espaciado interno */
+    max-width: 90%; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenido */
+    gap: 1.5rem; /* Espaciado entre los divs */
+    align-items: stretch; /* Estira los elementos para que tengan la misma altura */
+}
+
+.left-content {
+    flex: 0 30% 0; /* Ocupa aproximadamente el 30% del ancho */
+    background-color: #fff; /* Color de fondo */
+    padding: 1rem; /* Espaciado interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+.right-content {
+    flex: 0 0 70%; /* Ocupa aproximadamente el 70% del ancho */
+    background-color: #fff; /* Color de fondo */
+    padding: 0.5rem; /* Espaciado interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Secciones generales */
+section {
+    padding: 1rem; /* Espaciado interno */
+    max-width: 80%; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenido */
+}
+
+h2 {
+    border-bottom: 2px solid #333; /* Línea inferior */
+    padding-bottom: 1rem; /* Espaciado inferior */
+}
+
+/* Nueva sección */
+#additional-info {
+    margin-top: 2rem; /* Margen superior */
+    padding: 1rem; /* Espaciado interno */
+    background-color: #dfdfdf; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 2rem; /* Margen inferior */
+}
+
+.logo {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-left: 1rem; /* Espacio a la izquierda del logo */
+}
+
+#additional-info h2 {
+    border-bottom: 2px solid #333; /* Línea inferior */
+    padding-bottom: 0.5rem; /* Espaciado inferior */
+}
+
+#additional-info ul {
+    list-style-type: disc; /* Estilo de lista */
+    padding-left: 2rem; /* Espaciado a la izquierda */
+}
+
+/* Proyectos */
+.project {
+    background-color: #fff; /* Color de fondo */
+    padding: 1rem; /* Espaciado interno */
+    margin: 0.5rem 0; /* Margen vertical */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Formulario */
+form {
+    display: flex; /* Flexbox para el formulario */
+    flex-direction: column; /* Columna */
+}
+
+form label {
+    margin: 0.5rem 0 0.2rem; /* Margen para las etiquetas */
+}
+
+form input, form textarea {
+    padding: 0.5rem; /* Espaciado interno */
+    margin-bottom: 1rem; /* Margen inferior */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+form button {
+    padding: 0.7rem; /* Espaciado interno */
+    background-color: #333; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    font-size: medium; /* Tamaño de fuente */
+}
+
+form button:hover {
+    background-color: #555; /* Color de fondo al pasar el mouse */
+}
+
+/* Pie de página */
+footer {
+    display: flex; /* Flexbox para el footer */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 0.2rem 0; /* Espaciado interno */
+    background-color: #333; /* Color de fondo del footer */
+}
+
+.rounded-table {
+    border-collapse: separate; /* Permite esquinas redondeadas */
+    border-spacing: 0; /* Espaciado entre celdas */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que sobresalga */
+    background-color: #fff; /* Color de fondo de la tabla */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 1rem; /* Espaciado interno */
+    width: 90%; /* Ancho de la tabla */
+}
+
+.rounded-table td {
+    padding: 0.2rem; /* Espaciado interno en las celdas */
+    text-align: center; /* Centrar texto */
+    color: #333; /* Color del texto */
+    font-size: 1rem; /* Tamaño de fuente */
+}
+
+/* Estilos para habilidades y idiomas */
+.skills ul, .language-skills ul {
+    list-style: none; /* Sin estilo de lista */
+    padding: 0; /* Sin padding */
+}
+
+.skill_name {
+    font-weight: bold; /* Negrita */
+    margin-bottom: 5px; /* Margen inferior */
+    margin-top: 1rem; /* Margen superior */
+}
+
+.skill_prog {
+    width: 100%; /* Ancho completo */
+    height: 20px; /* Altura de la barra de progreso */
+    background: #e0e0e0; /* Color de fondo de la barra */
+    border-radius: 5px; /* Bordes redondeados */
+    position: relative; /* Posicionamiento relativo */
+    margin-bottom: 0.1rem; /* Margen inferior */
+}
+
+.skill_prog span {
+    display: block; /* Mostrar como bloque */
+    height: 100%; /* Altura completa */
+    background: #000000; /* Color de la barra de progreso */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.skill_per {
+    margin-left: 10px; /* Margen a la izquierda */
+}
+
+/* Estilos del carrusel */
+#carousel {
+    position: relative; /* Posicionamiento relativo */
+    max-width: 90%; /* Ancho máximo */
+    margin: 0 auto; /* Centra el carrusel */
+    overflow: hidden; /* Oculta el contenido que sobresale */
+}
+
+.carousel-container {
+    position: relative; /* Posicionamiento relativo */
+}
+
+.carousel-slides {
+    display: flex; /* Flexbox para las slides */
+    transition: transform 0.5s ease; /* Transición suave */
+}
+
+.carousel-slide {
+    min-width: 100%; /* Cada slide ocupa el 100% del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho total */
+    padding: 20px; /* Espaciado interno */
+    background-color: #fff; /* Fondo blanco para cada slide */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para hover */
+}
+
+.carousel-slide:hover {
+    transform: scale(1.02); /* Aumenta ligeramente el tamaño al pasar el mouse */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Aumenta la sombra al pasar el mouse */
+}
+
+input[type="radio"] {
+    display: none; /* Oculta los botones de radio */
+}
+
+#section1:checked ~ .carousel-slides {
+    transform: translateX(0); /* Muestra la primera slide */
+}
+
+#section2:checked ~ .carousel-slides {
+    transform: translateX(-100%); /* Muestra la segunda slide */
+}
+
+.carousel-indicators {
+    text-align: center; /* Centra los indicadores */
+    margin-top: 10px; /* Margen superior */
+}
+
+.indicator {
+    display: inline-block; /* Mostrar como bloque en línea */
+    width: 15px; /* Ancho del indicador */
+    height: 15px; /* Alto del indicador */
+    background-color: #ccc; /* Color del indicador inactivo */
+    border-radius: 50%; /* Forma circular */
+    margin: 0 5px; /* Margen horizontal */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: background-color 0.3s ease; /* Transición suave para el color */
+}
+
+.indicator:hover {
+    background-color: #555; /* Color del indicador al pasar el mouse */
+}
+
+input[type="radio"]:checked + .carousel-indicators .indicator {
+    background-color: #333; /* Color del indicador activo */
+}
